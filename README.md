@@ -54,7 +54,7 @@ offvsix --file extensions.txt
 - `--version` to specify the version.
 - `--destination` to specify the destination folder.
 - `--no-cache` to force re-download.
-- `--no-verbose` for less verbose output.
+- `--no-print` without output.
 - `--file` to specify a text file containing a list of extensions to download.
 - `--proxy` to use a proxy server.
 
