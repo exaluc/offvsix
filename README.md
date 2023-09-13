@@ -49,6 +49,11 @@ To download multiple extensions, you can use a text file where each line is an e
 offvsix --file extensions.txt
 ```
 
+### Install downloaded extension
+```bash
+code --install-extension ./extensions/ms-python.python-2023.17.12561009.vsix
+```
+
 ### Options:
 
 - `--version` to specify the version.
