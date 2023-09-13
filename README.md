@@ -1,6 +1,6 @@
 # offvsix: Offline Visual Studio Code Extension Downloader
 
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: MIT](https://img.shields.io/badge/License-MIT-green.svg)](https://opensource.org/licenses/MIT)
 
 `offvsix` is a Python CLI utility designed to streamline the process of downloading Visual Studio Code extensions for offline installations. Whether you're preparing for a coding session without internet access or simply want to keep your favorite extensions handy, `offvsix` has you covered!
 
