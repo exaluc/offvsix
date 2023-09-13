@@ -3,6 +3,7 @@ name = "offvsix"
 version = "0.1.1"
 description = "Visual Studio Code Extension Downloader for offline usage"
 authors = ["Lucian BLETAN <neuraluc@gmail.com>"]
+repository = "https://github.com/exaluc/offvsix"
 readme = "README.md"
 classifiers = [
     "Development Status :: 4 - Beta",
