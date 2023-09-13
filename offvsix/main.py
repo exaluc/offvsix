@@ -6,16 +6,16 @@ from typing import List
 
 class VSCodeExtensionDownloader:
 
-    def __init__(self, extension, proxy=None, version=None, destination=None, no_cache=False, verbose=False):
+    def __init__(self, extension, proxy=None, version=None, destination=None, no_cache=False, print=False):
         self.extension = extension
         self.proxy = proxy
         self.version = version
         self.destination = destination
         self.no_cache = no_cache
-        self.verbose = verbose
+        self.print = print
 
     def _print(self, msg):
-        if self.verbose:
+        if self.print:
             print(msg)
 
     def download(self):
@@ -109,14 +109,14 @@ def download_plugins_from_file(file_path: str, proxy=None, version=None, destina
 @click.option('--version', default=None, help='Specific version to download.')
 @click.option('--destination', default=None, help='Destination folder.')
 @click.option('--no-cache', is_flag=True, default=False, help='Force re-download even if the extension already exists.')
-@click.option('--no-verbose', is_flag=True, default=True, help='Verbose')
+@click.option('--no-print', is_flag=True, default=True, help='Without output print')
 @click.option('--file', default=None, help='Path to a text file with extensions to download, one per line.')
 @click.option('--proxy', default=None, help='Proxy URL.')
-def cli(extension, file, proxy, version, destination, no_cache, no_verbose):
+def cli(extension, file, proxy, version, destination, no_cache, no_print):
     if file:
-        download_plugins_from_file(file, proxy, version, destination, no_cache, no_verbose)
+        download_plugins_from_file(file, proxy, version, destination, no_cache, no_print)
     elif extension:
-        downloader = VSCodeExtensionDownloader(extension, proxy, version, destination, no_cache, no_verbose)
+        downloader = VSCodeExtensionDownloader(extension, proxy, version, destination, no_cache, no_print)
         downloader.download()
     else:
         print("Please provide either an extension or a file containing extensions.")
