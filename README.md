@@ -73,4 +73,4 @@ MIT Licensed. See [LICENSE](LICENSE) for full details.
 
 ## Author
 
-- [exaluc](https://github.com/exaluc)
+- [Lucian BLETAN](https://github.com/exaluc)
